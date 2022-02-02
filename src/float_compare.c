@@ -7,6 +7,11 @@ int main() {
     double res = fun();
   
     // CHANGE THIS IF - AI
+	if (!scanf("%lf %lf", &x, &y))
+	{
+	printf("n/a");
+	return -1;
+	}
     if (res < 1E-6)
        printf("OK!");
  
