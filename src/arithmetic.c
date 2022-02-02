@@ -7,11 +7,15 @@ int pri(int a, int b);
 
 int main()
 {
-	int x, y;
-	if (!scanf("%d %d", &x, &y)) 
+	double x, y;
+	if (!scanf("%lf %lf", &x, &y)) 
 	{
 	printf("n/a n/a n/a n/a");
 	return -1;
+	}
+	if (((int) x  != x) && ((int) y != y ) ){
+		printf("n/a");
+		return -1;
 	}
 	if (y == 0)
 	{
