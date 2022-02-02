@@ -8,7 +8,11 @@ int pri(int a, int b);
 int main()
 {
 	int x, y;
-	scanf("%d %d", &x, &y);
+	if (!scanf("%d %d", &x, &y)) 
+	{
+	printf("n/a n/a n/a n/a");
+	return -1;
+	}
 	if (y == 0)
 	{
 		printf("%d %d %d n/a", sum(x, y), dif(x,y), mul(x,y));
